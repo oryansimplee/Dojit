@@ -4,7 +4,8 @@
 
 Made with my mentor at [The Dojo](http://dojo.shinobidevs.com).
 
-
+app-name: oryan
+app-address: https://oryan.herokuapp.com
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
