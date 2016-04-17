@@ -9,4 +9,4 @@ if Rails.env.development?
     domain:         'heroku.com',
     enable_starttls_auto: true
   }
-endclear
+end
