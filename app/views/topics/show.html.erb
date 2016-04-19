@@ -15,7 +15,7 @@
           </h4>
           <small>
             <%= image_tag(post.user.avatar.tiny.url) if post.user.avatar? %>
-                 <!--%= image_tag("http://www.aldoo.org/wp-content/uploads/2015/01/dog-image.jpg")  %-->
+             <%= image_tag(post.image.tiny.url) if post.image? %>
             submitted <%= time_ago_in_words(post.created_at) %> ago by
             <%= post.user.name %><br/>
             <%= post.comments.count %> Comments

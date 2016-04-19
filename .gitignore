@@ -17,3 +17,6 @@
 /tmp
 
 /config/application.yml
+
+# Carrierwave image
+public/uploads
