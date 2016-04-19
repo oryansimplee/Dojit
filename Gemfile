@@ -57,4 +57,7 @@ gem 'devise'
 gem 'pundit'
 gem 'figaro'
 gem 'redcarpet'
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'fog'
 
