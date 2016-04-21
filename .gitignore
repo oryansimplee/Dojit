@@ -20,3 +20,5 @@
 
 # Carrierwave image
 public/uploads
+
+db/schema.rb
