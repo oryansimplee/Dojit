@@ -7,10 +7,9 @@ describe User do
   describe "#favorited(post)" do
 
   	 before do
-      	@post = associated_post
-    	@user = authenticated_user
-    	@favorite = Favorite.new( post: @post, user: @user)
-   	 	
+      	 @post = associated_post
+    	   @user = authenticated_user
+    	   @favorite = Favorite.new( post: @post, user: @user) 	
     end
 
     it "returns `nil` if the user has not favorited the post" do
