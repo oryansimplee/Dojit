@@ -8,8 +8,7 @@ describe "Visiting profiles" do
     @user = authenticated_user
     @post = associated_post(user: @user)
     @comment= comment_without_email(user: @user,post:@post)
-    allow(@comment).to receive(:send_favorite_emails)
-    @comment.save
+   
   end
 
   describe "not signed in" do

@@ -40,7 +40,7 @@ class ApplicationPolicy
 
   private
   def can_moderate?
-      user!=nil && (record.user == user || user.admin? || user.moderator?)
+      user.present? && (record.user == user || user.admin? || user.moderator?)
   end
 
   class Scope
