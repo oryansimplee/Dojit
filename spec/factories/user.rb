@@ -12,12 +12,6 @@ FactoryGirl.define do
 	    	user.posts FactoryGirl.create(:post,user: user)
 	    	user.comments FactoryGirl.create(:comment, user: user, post: user.posts.first)
   	end
-
   end
-
-
   end
-
-  
-
 end
