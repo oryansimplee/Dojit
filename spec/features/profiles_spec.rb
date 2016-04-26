@@ -3,9 +3,9 @@ require 'rails_helper'
 describe "Visiting profiles" do
 
   before do
-    @user = create(:user)
-    @post = create(:post, user: @user)
-    @comment= create(:comment, user: @user, post: @post)
+    @user = create( :user_with_post_and_comment)
+    @post= @user.posts.first
+    @comment=@user.comments.first
   end
 
   describe "not signed in" do

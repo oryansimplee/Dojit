@@ -8,6 +8,7 @@ describe Vote do
         v = Vote.new(value: 1)
         expect(v.valid?).to eq(true)
 		    v2 = Vote.new(value: -1)
+        #binding.pry
         expect(v2.valid?).to eq(true)
 		    v3 = Vote.new(value: 2)
         expect(v3.valid?).to eq(false)
