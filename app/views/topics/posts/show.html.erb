@@ -17,8 +17,12 @@
   
 
   <h4><%= "Comments" %></h4>
-   <%= render partial: 'comments/comment', collection: @comments %>
-    <%= render partial: 'comments/form', locals: { topic: @topic, post: @post, comment: @post.comments.new }  if current_user%>
+  <div class='js-comments'>
+      <%= render partial: 'comments/comment', collection: @comments %>
+  </div>
+  <div class='new-comment'>
+      <%= render partial: 'comments/form', locals: { topic: @topic, post: @post, comment: @post.comments.new }  if current_user%>
+  </div>
 
   </div>
   <div class="col-md-4">
