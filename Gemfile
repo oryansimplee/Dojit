@@ -61,6 +61,7 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'fog'
 gem 'will_paginate', '~> 3.0.5'
+gem 'redis', '~>3.2'
 
 group :test do
   gem 'capybara', '~> 2.2.0'

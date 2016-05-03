@@ -6,4 +6,8 @@ class PostPolicy < ApplicationPolicy
   	def destroy?
     	can_moderate?
   	end
+
+  	def allowFavorite?
+  		  user.present?
+  	end
 end
