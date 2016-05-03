@@ -7,7 +7,7 @@ class PostPolicy < ApplicationPolicy
     	can_moderate?
   	end
 
-  	def allowFavorite?
+  	def allow_favorite?
   		  user.present?
   	end
 end

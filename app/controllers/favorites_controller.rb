@@ -1,14 +1,16 @@
 class FavoritesController < ApplicationController
 
-def favorite
+def create
     post = Post.find(params[:post_id])
-    $redis.sadd(current_user.id,post.id)
+    fm= FavoritesManager.new(current_user.id)
+    fm.favorite_post(post)
     redirect_to :back
  end
 
- def unfavorite
+ def destroy
     post = Post.find(params[:post_id])
-    $redis.srem(current_user.id,post.id)
+    fm= FavoritesManager.new(current_user.id)
+    fm.unfavorite_post(post)
     redirect_to :back
 end
 
